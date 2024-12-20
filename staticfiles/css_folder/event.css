@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.images {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+.images img {
+  width: calc(100% / var(--img-count));
+  margin: 10px;
+}
+
+.events {
+  background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url(../images_folder/upcomingevent_background.jpg);
+}
+
+.society {
+    background-color: aquamarine;
+}
+
+.gallery {
+  background-color: teal;
+}
+
+.galleryimages {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galleryimages img{
+  width: calc(100% / var(--gallery-count));
+  margin: 10px;
+}
+
+:root {
+    --img-count: 9;
+    --gallery-count: 13;
+}
+
+.images img:hover {
+  transform: scale(120%);
+}

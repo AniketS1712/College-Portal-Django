@@ -1,0 +1,17 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css_folder/addinfo.css' %}">
+    </head>
+    <body>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="buttons">
+                <button type="submit">Add Information</button>
+                <a href="{% url 'Student' %}"><button type="button">Cancel</button></a>
+                <button type="reset"> reset</button>
+            </div>
+        </form>
+    </body>
+</html>

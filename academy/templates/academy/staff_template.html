@@ -1,0 +1,59 @@
+{% load static %}
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'css_folder/staff_template1.css' %}" />
+  </head>
+  <body>
+    {% for staff in data %}
+    <h1>Faculty {{ staff.F_Name }} Details</h1>
+
+    <div class="body">
+      <div class="image">
+        <img src="{% static 'images_folder/' %}{{ imgfile }}" />
+      </div>
+      <div class="table">
+        <table>
+          <tbody>
+            <tr>
+              <th>F Name</th>
+              <td>{{ staff.F_Name }}</td>
+            </tr>
+            <tr>
+              <th>F Designation</th>
+              <td>{{ staff.F_Designation }}</td>
+            </tr>
+            <tr>
+              <th>Subject</th>
+              <td>{{ staff.Subject }}</td>
+            </tr>
+            <tr>
+              <th>Department</th>
+              <td>{{ staff.Department }}</td>
+            </tr>
+            <tr>
+              <th>Educational Qualification</th>
+              <td>{{ staff.Educational_Qualification }}</td>
+            </tr>
+            <tr>
+              <th>Email</th>
+              <td>{{ staff.Email }}</td>
+            </tr>
+            <tr>
+              <th>Specialization</th>
+              <td>{{ staff.Specialization }}</td>
+            </tr>
+            <tr>
+              <th>Field of Interest</th>
+              <td>{{ staff.Field_of_Interest }}</td>
+            </tr>
+            <tr>
+              <th>Teaching Experience</th>
+              <td>{{ staff.Teaching_Experience }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    {% endfor %}
+  </body>
+</html>

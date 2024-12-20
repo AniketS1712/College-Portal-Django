@@ -1,0 +1,98 @@
+{% load static %}
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'css_folder/home1.css' %}" />
+    <script src="https://kit.fontawesome.com/a9dca9e707.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="image">
+      <img src="{% static 'images_folder/bciit.png' %}" class="logo" width="75%"/>
+    </div>
+    <div class="navbar">
+      <a href="#about">About Us</a>
+      <a href="#placement">Placement</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+    <div class="links">
+      <div class="students">
+        <img src="{% static 'images_folder/student.jpg' %}" class="info"/><br />
+        <p>Staff Info</p>
+        <a href="{% url 'Staff' %}">View More</a>
+      </div>
+      <div class="staff">
+        <img src="{% static 'images_folder/staff.jpg' %}" class="info"/><br />
+        <p>Student Info</p>
+        <a href="{% url 'Student' %}">View More</a>
+      </div>
+      <div class="events">
+        <img src="{% static 'images_folder/events.jpg' %}" class="info"/><br />
+        <p>Event Info</p>
+        <a href="{% url 'event' %}">View More</a>
+      </div>
+    </div>
+    <div class="body">
+      <div class="main-section">
+        <img src="{% static 'images_folder/bciit.jpg' %}" />
+        <div>
+          <h2 class="heading" id="about">About Our College</h2>
+          <p>
+            Banarsidas Chandiwala Institute of Information Technology (BCIIT)
+            was established in 1999 to run Bachelor of Computer Application
+            (BCA) and Master of Computer Application (MCA) programme. The
+            Institute is affiliated with Guru Gobind Singh Indraprastha
+            University, Delhi for awarding the degree and is approved by the All
+            India Council of Technical Education (AICTE), Ministry of HRD,
+            Government of India.The Institute is established under the aegis of
+            Sri Banarsidas Chandiwala Sewa Smarak Trust Society, a charitable
+            Society working in the field of health and education since 1952.
+          </p>
+        </div>
+      </div>
+      <br /><br />
+      <div class="placement" id="placement">
+        <h3>Placement Companies</h3>
+        <img src="{% static 'images_folder/placement-1.jpeg' %}" />
+        <img src="{% static 'images_folder/placement-2.jpeg' %}" />
+        <img src="{% static 'images_folder/placement-3.jpeg' %}" />
+        <img src="{% static 'images_folder/placement-4.jpeg' %}" />
+        <img src="{% static 'images_folder/placement-5.jpeg' %}" />
+        <img src="{% static 'images_folder/placement-6.jpeg' %}" />
+        <img src="{% static 'images_folder/placement-7.jpeg' %}" />
+        <img src="{% static 'images_folder/placement-8.jpeg' %}" />
+        <img src="{% static 'images_folder/placement-9.jpeg' %}" />
+      </div>
+      <br><br><br>
+    </div>
+    <div class="footer">
+      <div class="bciit">
+        <h2>BCIIT</h2>
+        <p>
+          The Institute is student centric where the faculty members are always
+          alive to the needs of the students and are focussed to develop them to
+          top class software professionals. The Programme Coordinator and
+          mentors monitor the progress of each student. The students go through
+          continuous evaluation for which tests are conducted every Monday. For
+          the personality development the students undergo communication skills,
+          etiquette, and organisation behaviour classes. To develop their
+          competitive skills the students are subjected to debates, quizzes,
+          software development tests, sports and cultural programmes.
+        </p>
+      </div>
+      <div class="touch" id="contact">
+        <h3>Get in touch</h3>
+        <ul class="footer-contact">
+          <li><b>Email :</b> bciit@ac.in</li>
+          <li><b>Call :</b> +91 -123 456 7890</li>
+          <li><b>Fax :</b> +91 -123 4567890</li>
+          <li><b>Website :</b> <a href="https://www.Bciit.com">https://www.Bciit.com</a></li>
+        </ul>
+      </div>
+      <div class="socialmedia">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </body>
+</html>

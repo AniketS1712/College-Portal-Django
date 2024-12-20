@@ -1,0 +1,35 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css_folder/student1.css' %}">
+    </head>
+    <body>
+        <h1>Students information displayed here</h1>
+        <table>
+            <thead>
+                <th>Enrollment_no</th>
+                <th>S_Name</th>
+                <th>S_Age</th>
+                <th>Course</th>
+                <th>College</th>
+            </thead>
+            <tbody>
+
+                {% for std in student %}
+                <tr>
+                    <td>{{std.Enrollment_no}}</td>
+                    <td>{{std.S_Name}}</td>
+                    <td>{{std.S_Age}}</td>
+                    <td>{{std.Course}}</td>
+                    <td>{{std.College}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div class="button">
+            <button>
+                <a href="{% url 'database' %}">Add</a>
+            </button>
+        </div>
+    </body>
+</html>
